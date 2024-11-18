@@ -91,5 +91,26 @@ console.log(result);
 
 //* Map Methods
 
-// Map.clear() => Removes all the elements from the map.
-// Map.delete() => Removes a specific element from the map.
+// 1. Map.clear() => Removes all the elements from the map.
+// 2. Map.delete() => Removes a specific element from the map.
+
+// 3. Map.entries()=> Returns an iterator over the key/value pairs in the map.
+
+const dipesh = new Map();
+dipesh.set("name", "Dipesh");
+dipesh.set("age", 22);
+// => [Map Entries] { [ 'name', 'Dipesh' ], [ 'age', 22 ] }
+console.log(dipesh.entries().next()); // => { value: [ 'name', 'Dipesh' ], done: false }
+
+// 4. Map.forEach() => Executes a provided function once for each key/value pair in the map.
+dipesh.forEach((value, key, map) => {
+  console.log(`${key}: ${value}`);
+});
+
+// 5. Map.get() => Returns the value associated with the provided key.
+
+// 6. Map.has() => Returns true if the map contains the provided key.
+
+// 7. Map.keys() => Returns an iterator over the keys in the map.
+
+// 8. Map.values() => Returns an iterator over the values in the map.
